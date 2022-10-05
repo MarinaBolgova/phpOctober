@@ -7,3 +7,7 @@ function debug ($info, $is_die = false)
         die();
     }
 }
+function change($param)
+{
+    $param = 'жопа';
+}

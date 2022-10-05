@@ -31,3 +31,20 @@ $price = 30000;
 $arrRes = compact('product', 'price');
 debug($arrRes);
 
+$arProductsInfo = [
+    'productName' => 'Название продукта',
+    'productValue' => 125355
+];
+extract($arProductsInfo);
+echo $productName;
+echo $productValue;
+
+
+
+$arrPr1 = [1, 2, 3, 4, 5];
+/*echo debug(array_splice($arrPr1, 1, 3));*/
+echo debug($arrPr1);
+$arrInner = ['a', 'b', 'c'];
+array_splice($arrPr1,3,0, $arrInner);
+echo debug($arrPr1);
+
