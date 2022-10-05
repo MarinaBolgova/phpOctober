@@ -43,8 +43,13 @@ echo $productValue;
 
 $arrPr1 = [1, 2, 3, 4, 5];
 /*echo debug(array_splice($arrPr1, 1, 3));*/
-echo debug($arrPr1);
 $arrInner = ['a', 'b', 'c'];
 array_splice($arrPr1,3,0, $arrInner);
 echo debug($arrPr1);
 
+$arrPr2 = [1, 2, 3, 4, 5];
+
+array_splice($arrPr2,1,0, ['a', 'b']);
+array_splice($arrPr2,6,0, ['c','d']);
+array_splice($arrPr2,9,0, 'e');
+echo debug($arrPr2);
