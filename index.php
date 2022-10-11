@@ -88,4 +88,7 @@ echo '<br>';
     }
 
 
-
+echo var_dump(selectYear(1, '200'));
+echo var_dump(selectYear(1, 200));
+echo var_dump(selectYear(100, 20));
+echo var_dump(selectYear(100));
