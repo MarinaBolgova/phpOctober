@@ -80,13 +80,6 @@ echo getDigitSum(112);
 echo '<br>';
 echo '<br>';
 
-    for ($j = 1; $j <= 2022; $j++) {
-        if (getDigitSum($j) == 13) {
-            echo ($j). ', ';
-
-        }
-    }
-
 
 echo var_dump(selectYear(1, '200'));
 echo var_dump(selectYear(1, 200));
