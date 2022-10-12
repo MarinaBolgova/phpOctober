@@ -75,6 +75,7 @@ echo returnDayOfTheWeek(6);
 debug(returnPositionValueOfArray($arrTest2));
 
 echo getDigitSum(112);
+echo getDigitSum('112');
 
 
 echo '<br>';
