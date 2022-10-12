@@ -76,24 +76,13 @@ function getDigitSum($digt) : int
     } else  return 'Ошибка';   
 return $num;
 }
-function getMin($x,$y)
-{
-    $x < $y ? $min = $x : $min = $y;
-    return $min;
-}
-function getMax($x,$y)
-{
-    $x > $y ? $max = $x : $max = $y;
-    return $max;
-}
-
 
 function selectYear($a, $b = 0)
 { 
     $arr = [];
     if (is_int($a) && is_int($b))
     {
-        for ($j = getMin($a, $b); $j <= getMax($a, $b); $j++)
+        for ($j = min($a, $b); $j <= max($a, $b); $j++)
         {
             if (getDigitSum($j) == 13) 
             {
