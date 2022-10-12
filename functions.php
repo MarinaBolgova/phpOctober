@@ -66,10 +66,14 @@ function returnPositionValueOfArray($arr)
 }
 function getDigitSum($digt) : int
 {   $num = 0;
-    $digt = $digt . '';
-    for ($i = 0; $i < strlen($digt); $i++) {
-        $num += $digt[$i];
-    }
+    if (is_int($digt))
+    {
+        $digt = $digt . '';
+        for ($i = 0; $i < strlen($digt); $i++)
+        {
+          $num += $digt[$i];
+        }
+    } else  return 'Ошибка';   
 return $num;
 }
 function getMin($x,$y)
