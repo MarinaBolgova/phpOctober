@@ -87,5 +87,10 @@ echo '<br>';
         }
     }
 
+echo debug(selectYear(112, 3));
+echo debug(selectYear(1, 30));
+echo debug(selectYear(62));
+echo debug(selectYear(112, '3'));
+
 
 
