@@ -1,0 +1,512 @@
+Index: two/functions.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/two/functions.php b/two/functions.php
+new file mode 100644
+--- /dev/null	(date 1666195967918)
++++ b/two/functions.php	(date 1666195967918)
+@@ -0,0 +1,9 @@
++<?php
++
++function debug ($info, $is_die = false)
++{
++    echo '<pre>' . print_r($info, true) . '</pre>';
++    if ($is_die){
++        die();
++    }
++}
+Index: two/index.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/two/index.php b/two/index.php
+new file mode 100644
+--- /dev/null	(date 1666204260418)
++++ b/two/index.php	(date 1666204260418)
+@@ -0,0 +1,42 @@
++<?php
++
++require_once 'functions.php';
++
++
++if (!isset($_REQUEST['OK']) || empty(trim($_REQUEST['name']) || empty(trim($_REQUEST['title'])))) {
++ if ( isset($_REQUEST['title'])){
++     echo 'Файла'. trim($_REQUEST['title']). 'не существует';
++
++ }
++?>
++
++<!--<form action='test.php' method="post">
++    <input type="text" name="login">
++    <input type="password" name="password">
++    <button type="submit" name="OK">
++</form>-->
++
++
++<!--<form action='test.php' method="post">
++    <input type="text" name="age">
++    <button type="submit" name="OK">
++</form>-->
++    <form action='index.php' method="get">
++        <input type="text" name="name">
++        <input type="text" name="title">
++        <button type="submit" name="OK">
++    </form>-->
++
++<?php
++
++} else {
++    if (file_exists(trim($_REQUEST['title']))) {
++
++        header('location: ' . trim($_REQUEST['title']) . '?name= ' . trim($_REQUEST['name']));
++
++    }
++
++
++}
++
++?>
+\ No newline at end of file
+Index: two/.idea/.gitignore
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/two/.idea/.gitignore b/two/.idea/.gitignore
+new file mode 100644
+--- /dev/null	(date 1664988285875)
++++ b/two/.idea/.gitignore	(date 1664988285875)
+@@ -0,0 +1,8 @@
++# Default ignored files
++/shelf/
++/workspace.xml
++# Editor-based HTTP Client requests
++/httpRequests/
++# Datasource local storage ignored files
++/dataSources/
++/dataSources.local.xml
+Index: two/.idea/modules.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/two/.idea/modules.xml b/two/.idea/modules.xml
+new file mode 100644
+--- /dev/null	(date 1664988285509)
++++ b/two/.idea/modules.xml	(date 1664988285509)
+@@ -0,0 +1,8 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ProjectModuleManager">
++    <modules>
++      <module fileurl="file://$PROJECT_DIR$/.idea/phpOctober.iml" filepath="$PROJECT_DIR$/.idea/phpOctober.iml" />
++    </modules>
++  </component>
++</project>
+\ No newline at end of file
+Index: two/one.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/two/one.php b/two/one.php
+new file mode 100644
+--- /dev/null	(date 1666203852341)
++++ b/two/one.php	(date 1666203852341)
+@@ -0,0 +1,8 @@
++<?php
++
++
++
++    echo 'Привет' . $_REQUEST['name'];
++
++   echo '<a href="index.php">Домой</a>';
++
+Index: two/test.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/two/test.php b/two/test.php
+new file mode 100644
+--- /dev/null	(date 1666200306518)
++++ b/two/test.php	(date 1666200306518)
+@@ -0,0 +1,18 @@
++<?php
++
++require_once 'functions.php';
++//if (isset($_REQUEST['OK']) && !empty(trim(($_REQUEST['login'])) && !empty(trim($_REQUEST['password']))))
++//{
++//    echo 'Привет' {$_REQUEST['login']} 'твой пароль' {$_REQUEST}
++//} else 'Введен логин или пароль неверный';.....не успела
++
++//=================
++if (!isset($_REQUEST['OK']) || empty(trim($_REQUEST['age']))) {
++    header('location: index.php');  // так делать нельзя или очень аккуратно
++
++    } else  {
++    echo trim($_REQUEST['age']).'<br><br>';
++    echo '<a href="index.php">Домой</a>';
++}
++
++
+Index: two/.idea/vcs.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/two/.idea/vcs.xml b/two/.idea/vcs.xml
+new file mode 100644
+--- /dev/null	(date 1664988285554)
++++ b/two/.idea/vcs.xml	(date 1664988285554)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="VcsDirectoryMappings">
++    <mapping directory="$PROJECT_DIR$" vcs="Git" />
++  </component>
++</project>
+\ No newline at end of file
+Index: two/.idea/php.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/two/.idea/php.xml b/two/.idea/php.xml
+new file mode 100644
+--- /dev/null	(date 1665425830323)
++++ b/two/.idea/php.xml	(date 1665425830323)
+@@ -0,0 +1,4 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="PhpProjectSharedConfiguration" php_language_level="8.0" />
++</project>
+\ No newline at end of file
+Index: two/.idea/phpOctober.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/two/.idea/phpOctober.iml b/two/.idea/phpOctober.iml
+new file mode 100644
+--- /dev/null	(date 1664988285484)
++++ b/two/.idea/phpOctober.iml	(date 1664988285484)
+@@ -0,0 +1,8 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<module type="WEB_MODULE" version="4">
++  <component name="NewModuleRootManager">
++    <content url="file://$MODULE_DIR$" />
++    <orderEntry type="inheritedJdk" />
++    <orderEntry type="sourceFolder" forTests="false" />
++  </component>
++</module>
+\ No newline at end of file
+Index: one/index.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/one/index.php b/one/index.php
+new file mode 100644
+--- /dev/null	(date 1666194725520)
++++ b/one/index.php	(date 1666194725520)
+@@ -0,0 +1,96 @@
++<?php
++require_once 'functions.php';
++/*
++
++$arrHumans = ['Коля','Вася','Дима','Света'];
++$arrTeams = array_chunk($arrHumans, 1); //разносит элементы по разным ключам
++
++/*echo debug($arrHumans);*/
++/*echo debug($arrTeams);*/
++
++/*$arrTeam1 = array_slice($arrTeams, 0, 1 ); // возвращает выбранные элементы
++$arrTeam2 = array_slice($arrTeams, 1, 1 );
++
++echo debug($arrTeam1);
++echo debug($arrTeam2);
++
++$arrNames = ['Коля','Вася','Дима','Света'];
++$arrSurnames = ['Петров','Сидоров','Иванов','Смирнова'];
++
++$arrResult = array_combine($arrNames, $arrSurnames);  // элементы первого массива делает ключами, а элемнты второго значениями этих ключей
++echo debug($arrResult);
++
++$arrTest = ['Петя','Вася','Дима','Света', 'Дима','Света','Петя','Петя'];//
++
++
++echo debug(array_count_values($arrTest));
++
++$product = 'Телевизор LG328746';
++$price = 30000;
++
++$arrRes = compact('product', 'price');
++debug($arrRes);
++
++$arProductsInfo = [
++    'productName' => 'Название продукта',
++    'productValue' => 125355
++];
++extract($arProductsInfo);
++echo $productName;
++echo $productValue;
++
++
++
++$arrPr1 = [1, 2, 3, 4, 5];
++/*echo debug(array_splice($arrPr1, 1, 3));*/
++/*$arrInner = ['a', 'b', 'c'];
++array_splice($arrPr1,3,0, $arrInner);
++echo debug($arrPr1);
++
++$arrPr2 = [1, 2, 3, 4, 5];
++
++array_splice($arrPr2,1,0, ['a', 'b']);
++array_splice($arrPr2,6,0, ['c','d']);
++array_splice($arrPr2,9,0, 'e');
++echo debug($arrPr2);*/
++
++//============10.10.22
++$arrTest = ['Петя','Вася','Дима','Света', 'Дима','Света','Петя','Петя'];
++$arrTest2 = [1, 2, -10, 5, 2.5];
++showArrayElement(' x,mncfxjn');
++showArrayElement($arrTest);
++echo '<br>';
++echo '<br>';
++
++
++echo calcSumOfDigits(5,6);
++echo '<br>';
++
++echo calcSumOfDigits(5,'ngcfghf') ? : 'Не удалось';
++echo '<br>';
++echo '<br>';
++
++echo returnDayOfTheWeek(6);
++
++debug(returnPositionValueOfArray($arrTest2));
++
++echo getDigitSum(112);
++
++
++echo '<br>';
++echo '<br>';
++
++    for ($j = 1; $j <= 2022; $j++) {
++        if (getDigitSum($j) == 13) {
++            echo ($j). ', ';
++
++        }
++    }
++
++echo debug(selectYear(112, 3));
++echo debug(selectYear(1, 30));
++echo debug(selectYear(62));
++echo debug(selectYear(112, '3'));
++
++
++
+Index: one/.idea/.gitignore
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/one/.idea/.gitignore b/one/.idea/.gitignore
+new file mode 100644
+--- /dev/null	(date 1664988285875)
++++ b/one/.idea/.gitignore	(date 1664988285875)
+@@ -0,0 +1,8 @@
++# Default ignored files
++/shelf/
++/workspace.xml
++# Editor-based HTTP Client requests
++/httpRequests/
++# Datasource local storage ignored files
++/dataSources/
++/dataSources.local.xml
+Index: one/functions.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/one/functions.php b/one/functions.php
+new file mode 100644
+--- /dev/null	(date 1666194367375)
++++ b/one/functions.php	(date 1666194367375)
+@@ -0,0 +1,89 @@
++<?php
++
++function debug ($info, $is_die = false)
++{
++    echo '<pre>' . print_r($info, true) . '</pre>';
++    if ($is_die){
++        die();
++    }
++}
++function change($param)
++{
++    $param = 'жопа';
++}
++
++function showArrayElement($arr)
++{
++    if (is_array($arr)) {
++        foreach ($arr as $key => $value) {
++            echo 'Ключ:'. $key. ' ; '. 'Значение:'. $value;
++        }
++    } else echo 'Вы передали не массив в функцию';
++}
++
++function calcSumOfDigits($digit1, $digit2) : int | bool
++{ if (is_int($digit1) && is_int($digit2))
++    {
++
++    return $digit1 + $digit2;
++}
++return false;
++}
++function returnDayOfTheWeek($numberOfDay) : string | bool
++{   if(is_int($numberOfDay) && ($numberOfDay >= 1 && $numberOfDay <= 7)) {
++    $arrDayOfTheWeek = [
++        1 => 'Понедельник',
++        2 => 'Вторник',
++        3 => 'Среда',
++        4 => 'Четверг',
++        5 => 'Пятница',
++        6 => 'Суббота',
++        7 => 'Воскресенье'
++    ];
++    return $arrDayOfTheWeek[$numberOfDay];
++} return false;
++}
++
++/** Функция возвращает массив с целыми положительными элементами массива
++ * @param $arr - массив
++ * @return array|false
++ */
++function returnPositionValueOfArray($arr)
++{
++    if (is_array($arr)) {
++        $resultArray = [];
++        foreach ($arr as $value)
++        {
++            if ((is_int($value) || is_double($value)) && $value >= 0)
++            {
++                $resultArray[] = $value;
++            }
++        }
++        return $resultArray;
++
++    }
++    return false;
++}
++function getDigitSum($digt) : int
++{   $num = 0;
++    $digt = $digt . '';
++    for ($i = 0; $i < strlen($digt); $i++) {
++        $num += $digt[$i];
++    }
++return $num;
++}
++function selectYear($a, $b = 0)
++{
++    $arr = [];
++    if (is_int($a) && is_int($b))
++    {
++        for ($j = min($a, $b); $j <= max($a, $b); $j++)
++        {
++            if (getDigitSum($j) == 13)
++            {
++                $arr[] = $j;
++            }
++        }
++    } else return 'Ошибка';
++    return $arr;
++}
+Index: one/.idea/phpOctober.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/one/.idea/phpOctober.iml b/one/.idea/phpOctober.iml
+new file mode 100644
+--- /dev/null	(date 1664988285484)
++++ b/one/.idea/phpOctober.iml	(date 1664988285484)
+@@ -0,0 +1,8 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<module type="WEB_MODULE" version="4">
++  <component name="NewModuleRootManager">
++    <content url="file://$MODULE_DIR$" />
++    <orderEntry type="inheritedJdk" />
++    <orderEntry type="sourceFolder" forTests="false" />
++  </component>
++</module>
+\ No newline at end of file
+Index: one/.idea/vcs.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/one/.idea/vcs.xml b/one/.idea/vcs.xml
+new file mode 100644
+--- /dev/null	(date 1664988285554)
++++ b/one/.idea/vcs.xml	(date 1664988285554)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="VcsDirectoryMappings">
++    <mapping directory="$PROJECT_DIR$" vcs="Git" />
++  </component>
++</project>
+\ No newline at end of file
+Index: one/.idea/modules.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/one/.idea/modules.xml b/one/.idea/modules.xml
+new file mode 100644
+--- /dev/null	(date 1664988285509)
++++ b/one/.idea/modules.xml	(date 1664988285509)
+@@ -0,0 +1,8 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ProjectModuleManager">
++    <modules>
++      <module fileurl="file://$PROJECT_DIR$/.idea/phpOctober.iml" filepath="$PROJECT_DIR$/.idea/phpOctober.iml" />
++    </modules>
++  </component>
++</project>
+\ No newline at end of file
+Index: one/.idea/php.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/one/.idea/php.xml b/one/.idea/php.xml
+new file mode 100644
+--- /dev/null	(date 1665425830323)
++++ b/one/.idea/php.xml	(date 1665425830323)
+@@ -0,0 +1,4 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="PhpProjectSharedConfiguration" php_language_level="8.0" />
++</project>
+\ No newline at end of file
+Index: three/index.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/three/index.php b/three/index.php
+new file mode 100644
+--- /dev/null	(date 1666631072192)
++++ b/three/index.php	(date 1666631072192)
+@@ -0,0 +1,2 @@
++<?php
++echo 'Hello world';
+\ No newline at end of file

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b4e61e68-a3b6-42fc-8e4c-651063747ef7" name="Changes" comment="cjplfybt gjgjr">
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_24_10_2022_20_30_[Changes]/shelved.patch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_24_10_2022_20_30__Changes_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Five/auth.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Five/footer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Five/header.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Five/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Four/auth.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Four/footer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Four/function.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Four/header.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Four/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Four/style.css" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2FivG3MzBO7qaQHhUguZb6ksqM7" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b4e61e68-a3b6-42fc-8e4c-651063747ef7" name="Changes" comment="" />
+      <created>1664987619749</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1664987619749</updated>
+      <workItem from="1664987620935" duration="8016000" />
+      <workItem from="1665417995833" duration="10023000" />
+      <workItem from="1666193662598" duration="1253000" />
+      <workItem from="1666627723190" duration="5712000" />
+      <workItem from="1666636167898" duration="626000" />
+      <workItem from="1666799904524" duration="9617000" />
+    </task>
+    <task id="LOCAL-00001" summary="one">
+      <created>1664989273638</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1664989273638</updated>
+    </task>
+    <task id="LOCAL-00002" summary="two">
+      <created>1664991623415</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1664991623415</updated>
+    </task>
+    <task id="LOCAL-00003" summary="three">
+      <created>1664994752553</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1664994752553</updated>
+    </task>
+    <task id="LOCAL-00004" summary="three">
+      <created>1664995441262</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1664995441262</updated>
+    </task>
+    <task id="LOCAL-00005" summary="four">
+      <created>1665428033686</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1665428033686</updated>
+    </task>
+    <task id="LOCAL-00006" summary="1910">
+      <created>1666194852172</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1666194852172</updated>
+    </task>
+    <task id="LOCAL-00007" summary="2410">
+      <created>1666627907013</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1666627907013</updated>
+    </task>
+    <task id="LOCAL-00008" summary="cjplfybt gjgjr">
+      <created>1666632757603</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1666632757603</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="false" />
+    <MESSAGE value="one" />
+    <MESSAGE value="two" />
+    <MESSAGE value="three" />
+    <MESSAGE value="four" />
+    <MESSAGE value="1910" />
+    <MESSAGE value="2410" />
+    <MESSAGE value="cjplfybt gjgjr" />
+    <option name="LAST_COMMIT_MESSAGE" value="cjplfybt gjgjr" />
+  </component>
+</project>
