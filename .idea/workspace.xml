@@ -1,20 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b4e61e68-a3b6-42fc-8e4c-651063747ef7" name="Changes" comment="cjplfybt gjgjr">
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_24_10_2022_20_30_[Changes]/shelved.patch" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_24_10_2022_20_30__Changes_.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Five/auth.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Five/footer.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Five/header.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Five/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Four/auth.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Four/footer.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Four/function.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Four/header.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Four/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Four/style.css" afterDir="false" />
+    <list default="true" id="b4e61e68-a3b6-42fc-8e4c-651063747ef7" name="Changes" comment="урок от  26,10">
+      <change afterPath="$PROJECT_DIR$/Six/auth.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Six/footer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Six/function.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Six/header.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Six/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Six/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Six/test.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,10 +50,15 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Six" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\OpenServer\domains\phpOctober\Six" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -73,7 +73,8 @@
       <workItem from="1666193662598" duration="1253000" />
       <workItem from="1666627723190" duration="5712000" />
       <workItem from="1666636167898" duration="626000" />
-      <workItem from="1666799904524" duration="9617000" />
+      <workItem from="1666799904524" duration="9678000" />
+      <workItem from="1667230582637" duration="10554000" />
     </task>
     <task id="LOCAL-00001" summary="one">
       <created>1664989273638</created>
@@ -131,7 +132,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666632757603</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="урок от  26,10">
+      <created>1666809630938</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1666809630938</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -169,6 +177,7 @@
     <MESSAGE value="1910" />
     <MESSAGE value="2410" />
     <MESSAGE value="cjplfybt gjgjr" />
-    <option name="LAST_COMMIT_MESSAGE" value="cjplfybt gjgjr" />
+    <MESSAGE value="урок от  26,10" />
+    <option name="LAST_COMMIT_MESSAGE" value="урок от  26,10" />
   </component>
 </project>
